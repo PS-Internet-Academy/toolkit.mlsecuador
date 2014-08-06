@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <rules
+        xmlns="http://namespaces.plone.org/diazo"
+        xmlns:css="http://namespaces.plone.org/diazo/css"
+        xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+
+        <!-- Rules applying to standard Plone pages -->
+        <rules css:if-content="#visual-portal-wrapper">
+            <theme href="index.html" />
+            
+            <!-- Clean Theme Header -->
+            <drop theme="/html/head/base" />
+            <drop theme="/html/head/title" />
+            <drop theme="/html/head/style" /> 
+            <drop theme="/html/head/comment()" />
+
+
+            <!-- copy Header Data in Template -->
+            <after
+                content="/html/head/title | /html/head/base | /html/head/style | /html/head/script | /html/head/link[not(@title='deactivate')] | /html/head/meta[not(@name='viewport')]"
+                theme='/html/head/meta[@name="viewport"]'/>
+
+            <!-- copy body attributes -->
+            <copy
+                attributes="class id dir"
+                content="/html/body"
+                theme="/html/body"
+            />
+
+            <rules if-content='not(//*[@id="mse_content"])'>
+            <!-- we like to know in portal-columns which cols are active -->
+            <!-- insert class: col_one -> only col1, col_two->only col2, col_all -> both cols -->
+            <rules css:if-content="#portal-column-one">
+                <before css:theme-children="#portal-columns"
+                    if-content='not(//*[@id="portal-column-two"])'>
+                    <xsl:attribute name="class">row col_one</xsl:attribute>
+                </before>
+                <before css:theme-children="#portal-columns"
+                    if-content='(//*[@id="portal-column-two"]) and
+                                (//*[@id="portal-column-one"])' >
+                    <xsl:attribute name="class">row col_all</xsl:attribute>
+                </before>
+            </rules>
+            <rules css:if-content="#portal-column-two">
+                <before css:theme-children="#portal-columns"
+                    if-content='not(//*[@id="portal-column-one"])'>
+                    <xsl:attribute name="class">row col_two</xsl:attribute>
+                </before>
+            </rules>
+            </rules>
+
+
+            <!-- Replace Logo with logo in Plone -->
+            <replace
+                css:content="#portal-logo"
+                css:theme-children=".logo"
+            />
+            <!-- Replace globalnav -->
+            <replace
+                css:content="#portal-globalnav"
+                css:theme-children="nav.globalnav"
+            />
+            <replace
+                css:content="#featurenavi"
+                css:theme-children=".subnavi-header .subnav"
+            />
+            <drop 
+                css:theme="nav.featurednav"
+                css:if-not-content=".subnavi-header .subnav" 
+            />
+
+            <!-- Document Content -->
+            <copy
+                css:content-children="#portal-columns"
+                css:theme="#portal-columns"
+            />
+
+            <!-- Personal Tools -->
+            <replace
+                css:content="#portal-personaltools-wrapper"
+                css:theme="#portal-personaltools-wrapper"
+            />
+
+            <!-- Language Selector -->
+            <replace
+                css:content-children="#portal-languageselector"
+                css:theme-children=".portal-languageselector"
+            />
+            <!-- Doormat Footer -->       
+            <replace
+                css:content="#doormat-container"
+                css:theme="#doormat-container"
+            />
+
+            <!-- script for google analytics -->
+            <!--
+            <append
+            css:content="#visual-portal-wrapper > div.row > script"
+            css:theme=".global-wrapper"
+            />
+            -->
+            <!-- Plone 4.3 style -->
+            
+            <append
+              css:content="#portal-footer-wrapper script"
+              css:theme=".global-wrapper"
+            />
+
+
+            <!-- move breadcrumbs -->
+            <drop css:content="#portal-breadcrumbs" />
+            <prepend css:content="#portal-breadcrumbs"
+                css:theme="#content-wrapper"
+                method="raw" />
+
+            <!-- add searchmask in header -->
+            <append
+                css:content=".template-mlsecuador_frontpage #portal-top > div > #home-search-wrapper"
+                css:theme=".topimage-header"
+                css:if-content="#portal-content-header img"
+                />
+
+        </rules>
+
+        <!-- rules for custom frontpage -->
+        <rules css:if-content="#homepage">
+            <!-- move Latest Listings -->
+            <rules css:if-content="#homepage #latest-listings-wrapper">
+                <!-- here are the tricks for the new content row settings -->
+                <!-- Drop plone classes -->
+                <drop css:content="#portal-columns .cell" attributes="class" />
+                <!-- Set a marker class "hasPortlets" if we have left column -->
+                <copy css:content="#latest-listings-wrapper"
+                      css:theme="#portal-columns"
+                      attributes="class"
+                      css:if-content="#portal-column-one" 
+                    />
+                <!-- copy right column to new location & drop it  -->
+                <replace css:content-children="#mse_rightcol">
+                   <xsl:apply-templates select="//*[@id='portal-column-two']" mode="raw"/>
+                    
+                </replace>
+                <drop css:content="#portal-column-two" />          
+            </rules>
+            <!-- add header images if they exist -->
+            <replace
+                css:content="#portal-content-header"
+                css:theme-children=".topimage-header"
+                css:if-content="#portal-content-header"
+            />
+
+        </rules>
+        <rules css:if-content="body.portaltype-collective-cover-content">
+            <!-- add header img if exist for covers -->
+            <replace
+                css:content="#portal-content-header"
+                css:theme-children=".topimage-header"
+                css:if-content="#portal-content-header"
+            />
+            <append
+                css:content=".socialheader.toolkit #home-search-wrapper"
+                css:theme=".topimage-header"
+                css:if-content="#portal-content-header img"
+                />
+            
+            <!-- drop not needed translations -->
+            <drop
+                css:content=".socialheader.toolkit .lang-es"
+                css:if-content="body.site-en"
+            />
+            <drop
+                css:content=".socialheader.toolkit .lang-en"
+                css:if-content="body.site-es"
+            />
+        </rules>
+
+    </rules>

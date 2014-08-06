@@ -1,0 +1,75 @@
+body .global-wrapper #content .developer_colored-box a,
+body .global-wrapper #content .developer_colored-box a:hover{
+    color:#FFFFFF !important;   
+}
+#featurenavi li .text a{
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: #7D7D7D !important;
+}
+.developer_colored-box a:visited{
+    color: #FFFFFF !important;
+}
+.developer_colored-box a:hover{
+    color: #FFFFFF !important;
+}
+.galleria-info-description {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+body #portal-columns .portlet.portletNavigationTree {
+    background-color: transparent;
+}
+body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree li.navTreeItem {
+    background: -webkit-linear-gradient(#E9E9E9, #D5D5D5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#E9E9E9, #D5D5D5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#E9E9E9, #D5D5D5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#E9E9E9, #D5D5D5) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #E9E9E9;
+}
+body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree ul.navTree li.navTreeItem {
+    background: none;
+    border-width: 0px;
+    margin: 0;
+    padding: 0;
+}
+body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree li.navTreeItem a span {
+    color: #2A2A2A;
+}
+body .global-wrapper #content {
+    background-color: transparent;
+}
+#content p {
+    color: #000000;
+}
+#content p.developer_p {
+    color: #000000;
+}
+body .documentFirstHeading {
+    color: #3d819b !important;
+}
+body .developer_double-headline {
+    color: #3d819b !important;
+}
+body .documentDescription {
+    color: #3d819b !important;
+}
+body .developer_table {
+    color: #000000;
+}
+body .developer_colored-box{
+    color: #FFFFFF !important;
+    background-color: #adbd3a;
+}
+body .developer_box {
+    border: 3px solid #808080;
+}
+body img.developer_box {
+    border: 3px solid #808080;
+}
+body .developer_table table tbody tr:hover {
+    background-color: #D9D9D9;
+    color: #808080;
+}
+body .developer_table table tbody tr:hover {
+    background-color: #D9D9D9;
+    color: #808080;
+}

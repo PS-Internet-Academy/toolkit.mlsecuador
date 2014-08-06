@@ -1,0 +1,44 @@
+.mlsec_latest-listings h6{
+    display:none;   
+}
+.mlsec_latest-listings .beds_baths{
+    float: left;   
+}
+#content .mlsec_latest-listings .beds_baths p{
+    color: #225F89;  
+    font-size: 1.4em;
+    margin-top: 0.4em;
+}
+.mlsec_latest-listings .price{
+    float: right;
+}
+.mlsec_latest-listings .price p{
+    background: url("../images/price-arrow.png") no-repeat scroll 0 0 #34A3B7;
+    padding: 0.5em 0.5em 0.5em 2em;
+    box-shadow: 0.4em 0.3em 5px #BBBBBB;
+    color:#ffffff !important;
+}
+.mlsec_latest-listings .location{
+    float: left; 
+}
+.mlsec_latest-listings .collection-item{
+    background-color: #F6F5F5;
+    border: 1px solid #E9E9E9;
+    border-radius: 0.3em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+.listing-collection-tile figure {
+    margin: 0.5em 1em 0.5em 0;
+}
+#content .mlsec_latest-listings .location p{
+    color: #707070;
+    display: block;
+    line-height: 1.2em;
+    padding-right: 1em;
+    padding-top: 1.2em;
+    text-transform: uppercase;
+}
+.tile-edge{
+    margin-bottom:1.5em;   
+}

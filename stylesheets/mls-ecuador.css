@@ -1,0 +1,336 @@
+/*--Development Gallery--*/
+#viewlet-above-content .carousel{
+    border: 3px solid #808080;
+    float: none;
+    margin-bottom: 3%;
+    padding: 2%;
+    width: auto;
+}
+
+body #viewlet-above-content .carousel .carousel-banners .carousel-banner .carousel-image img {
+    height: auto !important;
+    min-width: 100% !important;
+    max-width:100% !important;
+    width:100% !important;
+}
+
+#portal-column-content #viewlet-above-content div.carousel div.carousel-banners{
+  max-width:100%;
+  min-width:100%;
+  
+}
+
+
+#portal-column-content #viewlet-above-content div.carousel div.carousel-banners div.carousel-banner,
+#portal-column-content #viewlet-above-content div.carousel div.carousel-banners div.carousel-banner .carousel-image{
+  min-width:100% !important;
+  width:100% !important;
+  display:block;
+}
+
+
+
+#viewlet-above-content .carousel .carousel-banners .carousel-banner .carousel-text{
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    color: #ffffff;
+    display: block;
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    height: 25px;
+    left: -5px;
+    line-height: 1.2em;
+    margin: 0 0 0 0.75%;
+    padding: 1%;
+    position: relative;
+    right: 5px;
+    top: -431px;
+    width: 98%;
+}
+#viewlet-above-content .carousel .carousel-banners .carousel-banner .carousel-text .carousel-title{
+    float: left;
+    font-family: georgia,serif;
+    padding-left: 1%;
+    font-style: italic;
+}
+#viewlet-above-content .carousel .carousel-pager-button-next{
+    background-color: transparent;
+}
+
+#viewlet-above-content .carousel .carousel-pager-button-next span{
+    border-color: transparent transparent transparent #c7c7c7;
+    border-style: solid;
+    border-width: 25px 0 25px 20px;
+    color: transparent;
+    height: 0;
+    opacity: 0.76;
+    position: absolute;
+    right: 0;
+    top: 45%;
+    width: 0;
+    z-index: 9999;
+}
+
+#viewlet-above-content .carousel .carousel-pager-button-prev{
+    background-color: transparent;
+}
+#viewlet-above-content .carousel .carousel-pager-button-prev span{
+    border-color: transparent #c7c7c7 transparent transparent;
+    border-style: solid;
+    border-width: 25px 20px 25px 0;
+    color: transparent;
+    height: 0;
+    opacity: 0.76;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 0;
+    z-index: 9999;
+}
+#viewlet-above-content .carousel .carousel-pager{
+    height: 0;
+    margin: 0;
+}
+/*--Development Gallery: END --*/
+.header-row .logo {
+    margin-top: 20px;
+}
+#featurenavi li .text a{
+    display: inline-block;
+    margin-top: 3px;
+    padding: 8px 8px 4px;
+}
+.galleria-info-description {
+    bottom: 0;
+    color: #FFFFFF;
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    height: 25px;
+    left: 5px;
+    line-height: 1.2em;
+    margin-left: 0.75%;
+    padding: 1%;
+    position: absolute;
+    right: 5px;
+    top: -217px;
+    width: 94.8%;
+}
+body.subsection-gallery .global-wrapper .galleria-container .galleria-thumbnails-list{
+    bottom: -74px;
+}
+.galleria-info {
+    bottom: 89px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.galleria-info .galleria-info-title a{
+    display: none;
+}
+#featurenavi li {
+    display: inline-block;   
+}
+.portlet-static .image-inline.external-image {
+    margin-bottom: 10%;
+    margin-top: 10%;
+    max-width: 100%;
+}
+.cover-richtext-tile .image-inline.external-image {
+    max-width: 100%;
+}
+.formid-contact-us {
+    width: 50%;
+}
+.galleria-inner{
+    height: 350px !important;
+}
+.galleria-container.notouch{
+    height: 350px !important;
+}
+.galleria-stage{
+    bottom: 0 !important;
+    top: 0 !important;
+}
+.galleria-images .galleria-image{
+    height: 350px !important;
+}
+.galleria-images .galleria-image img{
+    bottom: 14px !important;
+    top: 14px !important;
+}
+body #portal-columns .portletNavigationTree .navTreeItem a:hover {
+    text-decoration: none;
+}
+body .navTreeItem .state-private {
+    line-height: normal;
+}
+#content-core p.developer_p img{
+    float: left;
+    margin-bottom: 5%;
+    width: 52%;
+}
+#content-core p.developer_text_right{
+    float: left;
+    margin-left: 4%;
+    width: 70%;
+    line-height: 1.8em;
+}
+body #portal-columns .portlet.portletNavigationTree {
+    border: none;
+}
+body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree li.navTreeItem {
+    border-radius: 0.3em;
+    font-size: 1.4em;
+    line-height: inherit;
+    padding-bottom: 6.5px;
+    padding-top: 6.5px;
+    margin-bottom: 4%;
+    text-align: center;
+}
+body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree li.navTreeItem a{
+    padding: 0 !important;
+}
+body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree li.navTreeItem a span {
+    font-family: duru sans;
+}
+body .global-wrapper #content {
+    border: none;
+}
+#content p.developer_p {
+    width: 50% !important;
+}
+body .documentFirstHeading {
+    font-size: 21.6px !important;
+    font-family: sanchez;
+}
+body .developer_double-headline {
+    font-size: 21.6px !important;
+    font-family: sanchez;
+}
+body .documentDescription {
+    font-size: 15.97px !important;
+}
+body .developer_table {
+    margin: 0;
+    max-width: 100%;
+}
+body .developer_colored-box{
+    font-family: sanchez;
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+body .developer_box {
+    float: none;
+    padding: 2%;
+    margin-bottom: 3%;
+    width: auto;
+}
+body img.developer_box {
+    float: none;
+    padding: 2%;
+    width: 93%;
+}
+body .developer_table table tbody {
+    width: 100% !important;
+}
+body .developer_table table tbody tr {
+    border-top: 1.5px solid threedlightshadow !important;
+}
+body .developer_table table tbody tr:first-child{
+    border-top: none!important;
+}
+body .developer_table table tbody tr th {
+    width: 20% !important;
+}
+body .developer_table table tbody tr:hover {
+    width: 20% !important;
+}
+body .developer_table table tbody tr:hover {
+    width: 20% !important;
+}
+body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree li.navTreeItem .contenttype-folder,body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree li.navTreeItem .contenttype-document {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#content-wrapper .image-inline{
+    width: 100%;
+}
+@media (min-width: 1200px){
+    body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree li.navTreeItem a span {
+        font-size: 11pt;
+    }
+}
+@media (min-width: 980px) and (max-width:1199px){
+    body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree li.navTreeItem a span {
+        font-size: 11pt;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px){
+    body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree li.navTreeItem a span {
+        font-size: 9pt;
+    }
+    .galleria-info-description {
+        width: 93.3%;
+        margin-left: 1.15%;
+    }
+    .responsive900 { 
+        display:none; 
+    }
+}
+@media (min-width: 600px) and (max-width: 767px){
+    body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree li.navTreeItem a span {
+        font-size: 9pt;
+    }
+    .responsive900 { 
+        display:none; 
+    }
+}
+@media (min-width: 581px) and (max-width: 599px){
+    body #portal-columns .portlet.portletNavigationTree dd.portletItem ul.navTree li.navTreeItem a span {
+        font-size: 7.6pt;
+    }
+    .responsive900 { 
+        display:none; 
+    }
+}
+@media (min-width: 280px) and (max-width: 580px){
+    .galleria-info-description {
+        width: 92.1%;
+        margin-left: 1.59%;
+    }
+    .responsive900 { 
+        display:none; 
+    }
+}
+
+#home-search-wrapper{
+    display:none;
+}
+.template-mlsecuador_frontpage #home-search-wrapper{
+    display:block;
+}
+
+#content .width-16 .tile.mlsec_latest-listings{
+  width:106%;    
+}
+body.portaltype-collective-cover-content .global-wrapper .topimage-header #home-search-wrapper #home-search form#form .label{
+     margin-left:5px;
+     }
+    
+#portal-personaltools #anon-personalbar a#personaltools-login{
+  display:none !important;
+}
+
+body #sidebar.fixed{
+  z-index:2222222 !important;
+}
+
+body .global-wrapper .developer_colored-box {
+    font-size: 15px !important;
+    letter-spacing: 2px;
+    padding: 15px !important;
+}
+
