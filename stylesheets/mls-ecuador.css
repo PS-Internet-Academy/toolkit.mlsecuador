@@ -92,6 +92,14 @@ body #viewlet-above-content .carousel .carousel-banners .carousel-banner .carous
     height: 0;
     margin: 0;
 }
+
+#viewlet-above-content .carousel.galleria-loader,
+.preload.galleria-loader{
+   background-image: url("../images/classic-loader.gif");
+   background-repeat: no-repeat;
+   background-position: center center;    
+}
+
 /*--Development Gallery: END --*/
 .header-row .logo {
     margin-top: 20px;

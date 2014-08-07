@@ -139,16 +139,19 @@ function responsive_carousel(){
     $('#viewlet-above-content .carousel').each(function( index ) {
         my_img=$(this).find('.carousel-image img:visible').first();
         height = my_img.height();
-        console.log(height);
         if(height>30){
           $(this).height(my_img.height());
         }
         else{
+            //don't show images until they are loaded
+            $('#viewlet-above-content .carousel img').css('visibility', 'hidden');
             
-            console.log('hide slider');
+            
+            $('#viewlet-above-content .carousel').addClass("galleria-loader");
             $(window).load(function() {
-                console.log('window loaded');
-                $(this).show();
+                $('#viewlet-above-content .carousel img').css('visibility', 'visible');
+                $('#viewlet-above-content .carousel').removeClass("galleria-loader");
+                
                 responsive_carousel();
             });
         }
@@ -190,6 +193,11 @@ $(document).ready(function() {
     if($('#viewlet-above-content .carousel').length>0){
             responsive_carousel();
         }
+        
+   //developer table
+   if($(".developer_table").length>0){
+       $(".developer_table tr").first().addClass('nohover');
+   }
   
     $(window).resize(function() {
         if($(".global-header").css('position')=='fixed'){
